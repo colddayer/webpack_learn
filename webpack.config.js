@@ -5,17 +5,21 @@ module.exports = {
   mode: 'development',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js',
+    filename: '[name].js'
   },
   module: {
     rules: [
       {
         test: /\.ts$/,
         use: [
-          { loader: path.resolve('src/loader/myLoader.js') },
-          { loader: 'ts-loader' },
-        ],
+          { loader: path.resolve('src/loader/codeLoader.js') },
+          { loader: 'ts-loader' }
+        ]
       },
-    ],
-  },
+      {
+        test: /\.(png|jpeg)$/,
+        use: [{ loader: path.resolve('src/loader/fileLoader.js') }]
+      }
+    ]
+  }
 };
