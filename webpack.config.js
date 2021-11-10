@@ -19,8 +19,7 @@ module.exports = {
       },
       {
         test: /\.(png|jpeg)$/,
-        use: [{ loader: path.resolve('src/loader/fileLoader.js') }],
-        type: 'javascript/auto'
+        use: [{ loader: path.resolve('src/loader/fileLoader.js') }]
       }
     ]
   },
