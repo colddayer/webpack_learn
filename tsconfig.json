@@ -11,5 +11,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */,
     "moduleResolution": "node"
   },
-  "include": ["./src/**/*"]
+  "include": ["./src/**/*"],
+  "exclude": ["./src/loader"]
 }

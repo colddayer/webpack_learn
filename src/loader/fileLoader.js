@@ -1,6 +1,6 @@
 module.exports = function (source) {
   console.log(source);
-  return '123';
+  return '../src/assets/js.jpeg';
 };
 
 module.exports.raw = true;
